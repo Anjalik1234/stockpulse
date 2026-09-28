@@ -1,0 +1,26 @@
+# Maven
+target/
+*.class
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Java
+*.log
+
+# Spring / environment secrets
+.env
+.env.*
+application-local.properties
+application-secret.properties
+
+# H2 database
+data/
+*.mv.db
+*.trace.db
+
+# OS
+.DS_Store
+Thumbs.db

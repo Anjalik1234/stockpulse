@@ -16,4 +16,9 @@ public class ProductEventPublisher {
         ProductInventoryLowEvent event = new ProductInventoryLowEvent(productId, previousStock, currentStock, reorderThreshold);
         eventPublisher.publishEvent(event);
     }
+
+    public void publishDemandSpikeEvent(String productId, Integer previousDemandVelocity, Integer currentDemandVelocity, Integer categoryAverageDemandVelocity) {
+        ProductDemandSpikeEvent event = new ProductDemandSpikeEvent(productId, previousDemandVelocity, currentDemandVelocity, categoryAverageDemandVelocity);
+        eventPublisher.publishEvent(event);
+    }
 }

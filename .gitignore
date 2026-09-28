@@ -1,25 +1,29 @@
-# Maven
+# Java / Maven
 target/
 *.class
 
 # IDE
 .idea/
 .vscode/
-*.iml
 
-# Java
-*.log
-
-# Spring / environment secrets
+# Environment / secrets
 .env
 .env.*
-application-local.properties
-application-secret.properties
+!.env.example
 
-# H2 database
-data/
-*.mv.db
-*.trace.db
+# Backend runtime data
+backend/data/
+backend/.env
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Local JDK installation
+oracleJdk-27/
+
+# Logs
+*.log
 
 # OS
 .DS_Store
